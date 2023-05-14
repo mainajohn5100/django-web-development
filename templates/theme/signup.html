@@ -13,7 +13,7 @@
   <body>
     <header class="header header--loggedIn">
       <div class="container">
-        <a href="/" class="header__logo">
+        <a href="{% url 'home' %}" class="header__logo">
           <img src="assets/logo.svg" />
           <h1>StudyBuddy</h1>
         </a>
@@ -36,7 +36,7 @@
         </form>
         <nav class="header__menu">
           <!-- Not Logged In -->
-          <a href="/login.html">
+          <a href="{% url 'login' %}">
             <img src="./assets/avatar.svg" />
             <p>Account</p>
           </a>
@@ -124,7 +124,7 @@
 
             <div class="auth__action">
               <p>Already have an account?</p>
-              <a href="login.html" class="btn btn--link">Log In</a>
+              <a href="{% url 'login' %}" class="btn btn--link">Log In</a>
             </div>
           </div>
         </div>

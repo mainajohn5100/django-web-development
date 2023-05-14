@@ -33,4 +33,4 @@ def signup(request) -> None:
     return render(request, 'theme/signup.html')
 
 def topics(request) -> None:
-    return render(request, 'theeme/topics.html')
+    return render(request, 'theme/topics.html')

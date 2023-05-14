@@ -13,7 +13,7 @@
   <body>
     <header class="header header--loggedIn">
       <div class="container">
-        <a href="/" class="header__logo">
+        <a href="{% url 'home' %}" class="header__logo">
           <img src="assets/logo.svg" />
           <h1>StudyBuddy</h1>
         </a>
@@ -36,7 +36,7 @@
         </form>
         <nav class="header__menu">
           <!-- Not Logged In -->
-          <!-- <a href="/login.html">
+          <!-- <a href="{% url 'login' %}">
             <img src="./assets/avatar.svg" />
             <p>Account</p>
           </a> -->
@@ -66,7 +66,7 @@
         <div class="layout__box">
           <div class="layout__boxHeader">
             <div class="layout__boxTitle">
-              <a href="index.html">
+              <a href="{% url 'home' %}">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@
                 <textarea name="about" id="about" placeholder="Write about yourself..."></textarea>
               </div>
               <div class="form__action">
-                <a class="btn btn--dark" href="profile.html">Cancel</a>
+                <a class="btn btn--dark" href="{% url 'profile' %}">Cancel</a>
                 <button class="btn btn--main" type="submit">Update Settings</button>
               </div>
             </form>
