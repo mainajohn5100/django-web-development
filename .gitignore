@@ -1,0 +1,4 @@
+mainApp/__pycache__
+BaseApp/__pycache__
+templates/theme/.prettierrc
+db.sqlite3
