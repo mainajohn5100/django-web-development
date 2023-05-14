@@ -1,3 +1,3 @@
 # django-web-development
-credits:
+# credits:
     1. StudyBudd for the front end template
