@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <header class="header header--loggedIn">
     <div class="container">
       <a href="{% url 'home' %}" class="header__logo">
@@ -17,7 +18,6 @@
           <input placeholder="{{ search_placeholder }}" />
         </label>
       </form>
-      {% include "mainApp/includes/nav.html" with full_name=f_name username=u_name %}
+      {% include "mainApp/includes/index_nav.html" with full_name=f_name username=u_name %}
     </div>
   </header>
-  
