@@ -4,6 +4,10 @@
 
 {% block title %}StudyBuddy - Find study partners around the world!{% endblock %}
 
+{% block page_js %}
+  <script src="{% static 'mainApp/js/script.js' %}"></script>
+{% endblock %}
+
 {% block body %}
 
 {% include "mainApp/includes/header.html" with app_title="StudyBuddy" f_name="John Doe" u_name="john_doe" search_placeholder="Search for rooms..." %}
